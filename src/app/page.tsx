@@ -1,16 +1,25 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import {
+  code,
+  description,
+  descriptionAnchor,
+  descriptionText,
+  grid,
+  main
+} from './page.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
+    <main className={main}>
+      <div className={description}>
+        <p className={descriptionText}>
           Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <code className={code}>src/app/page.tsx</code>
         </p>
         <div>
           <a
+            className={descriptionAnchor}
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +48,7 @@ export default function Home() {
         />
       </div>
 
-      <div className={styles.grid}>
+      <div className={grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
